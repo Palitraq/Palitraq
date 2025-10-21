@@ -2,22 +2,19 @@
 <html lang="en">
 <head>
     <title>Palitraq.lol</title>
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-    <h1>im a boar</h1>
-    <img src="static/boar.png" width="444" height="444">
+    <div class="content">
+        <h1>im a boar</h1>
+        <img src="static/boar.png" width="444" height="444">
+    </div>
     <audio id="boar-audio" src="static/boar.mp3"></audio>
-    <button onclick="playBoar()">play boar</button>
-    <button onclick="stopBoar()">stop boar</button>
-    <script>
-        function playBoar() {
-            const audio = document.getElementById('boar-audio');
-            audio.play();
-        };
-        function stopBoar() {
-            const audio = document.getElementById('boar-audio');
-            audio.pause();
-        };
-    </script>
+    
+    <button id="play-btn" onclick="playBoar()">play boar</button>
+    <button id="stop-btn" onclick="stopBoar()">stop boar</button>
+
+    <script src="static/js/audio.js"></script>
+    <script src="static/js/dvd.js"></script>
 </body>
 </html>

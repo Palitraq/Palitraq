@@ -1,0 +1,98 @@
+button {
+    position: fixed;
+    z-index: 1000;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    animation: dvdBounce 8s linear infinite;
+}
+
+#stop-btn {
+    background-color: #f44336;
+    animation: dvdBounce 6s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes dvdBounce {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    10% {
+        top: 10%;
+        left: 80%;
+        transform: translate(0, 0);
+    }
+    20% {
+        top: 20%;
+        left: 100%;
+        transform: translate(-100%, 0);
+    }
+    30% {
+        top: 50%;
+        left: 90%;
+        transform: translate(-100%, -50%);
+    }
+    40% {
+        top: 80%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+    }
+    50% {
+        top: 90%;
+        left: 80%;
+        transform: translate(-100%, -100%);
+    }
+    60% {
+        top: 90%;
+        left: 20%;
+        transform: translate(0, -100%);
+    }
+    70% {
+        top: 80%;
+        left: 0%;
+        transform: translate(0, -100%);
+    }
+    80% {
+        top: 50%;
+        left: 10%;
+        transform: translate(0, -50%);
+    }
+    90% {
+        top: 20%;
+        left: 0%;
+        transform: translate(0, 0);
+    }
+    95% {
+        top: 10%;
+        left: 10%;
+        transform: translate(0, 0);
+    }
+    100% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Основной контейнер */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Контейнер для контента */
+.content {
+    text-align: center;
+}
+
